@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	    <title>主页</title>
+	    <!-- 引入layui css文件 -->
+	    <link rel="stylesheet" href="layui-v2.2.3/layui/css/layui.css">
+	    <!-- 自定义 css -->
+	    <link rel="stylesheet" href="css/index.css">
+	</head>
+	<body>
+	<!-- Header -->
+	<div class="header">
+        <!-- 个性化标题 -->
+        <div class="mytitle">
+            <label>赌书消得泼茶香</label>
+        </div>
+        <!-- 导航栏 -->
+        <div class="mymenu-content">
+            <ul class="mymenu">
+                <li><a href="index.html">文章</a></li>
+                <li><a href="">留言</a></li>
+                <li><a href="photos.html">相册</a></li>
+                <li><a href="about.html">简介</a></li>
+                <li><a href="aihao.html">爱好</a></li>
+                <li><a href="movies.html">电影</a></li>
+                <li><a href="books.html">书籍</a></li>
+            </ul>
+        </div>
+        <!-- 隐藏功能 -->
+        <div class="other-functions">
+            <label>隐藏功能</label>
+        </div>
+        <!-- 搜索框 -->
+        <div class="query">
+            <input class="keyword" placeholder="搜索内容"/>
+            <i class="layui-icon" style="margin-right: 20px; font-size: 18px;">&#xe615;</i>
+        </div>
+    </div>
+    <!-- 个性签名 -->
+    <div class="my-sign">
+        <!--  包含标志和签名 -->
+        <div class="my-signImg">
+            <img id="my-signImg" src="img/my-sign.gif">
+            <div class="my-signWord">
+                <span class="my-signTitle" id="my-signTitle">匆匆时光</span>
+                <span class="my-signBody" id="my-signBody">I' am waiting for you here.</span>
+            </div>
+        </div>
+    </div>
+    <!-- Content -->
+    <div class="main-content">
+	    <!-- 个人以及所有文章、留言、照片汇总 包含大分类以及小标签 左面版 -->
+	    <div class="my-totalContent">
+	        <!-- 1.个人以及汇总部分 -->
+	        <div class="blog-inTotal">
+	            <!-- 头像 -->
+	            <img src="img/IMG_1568.PNG">
+	            <!-- 说明 -->
+	            <span>——好好学习，天天向上吧</span>
+	            <!-- 各方面汇总(各项目以及数量) -->
+	            <fieldset class="layui-elem-field">
+	                <legend>文章标签</legend>
+	                <!-- 用于存放tags -->
+	                <div class="layui-field-box" id="tagContent">
+						<span class="layui-badge-rim" style="height: 30px;line-height: 30px;margin-top: 13px;margin-left: 10px;font-weight: 400;">论语</span>
+		                <span class="layui-badge-rim" style="height: 30px;line-height: 30px;margin-top: 13px;margin-left: 10px">道德经</span>
+		                <span class="layui-badge-rim" style="height: 30px;line-height: 30px;margin-top: 13px;margin-left: 10px">余华作品</span>
+		                <span class="layui-badge-rim" style="height: 30px;line-height: 30px;margin-top: 13px;margin-left: 10px">沈从文</span>
+		                <span class="layui-badge-rim" style="height: 30px;line-height: 30px;margin-top: 13px;margin-left: 10px">冰心选集</span>
+		                <span class="layui-badge-rim" style="height: 30px;line-height: 30px;margin-top: 13px;margin-left: 10px">小说散文</span>
+		                <span class="layui-badge-rim" style="height: 30px;line-height: 30px;margin-top: 13px;margin-left: 10px">随笔</span>
+		                <span class="layui-badge-rim" style="height: 30px;line-height: 30px;margin-top: 13px;margin-left: 10px">外国文学</span>
+		                <span class="layui-badge-rim" style="height: 30px;line-height: 30px;margin-top: 13px;margin-left: 10px">人生感悟</span>
+		                <span class="layui-badge-rim" style="height: 30px;line-height: 30px;margin-top: 13px;margin-left: 10px">遇见你</span>
+		                <span class="layui-badge-rim" style="height: 30px;line-height: 30px;margin-top: 13px;margin-left: 10px">日记</span>
+		                <span class="layui-badge-rim" style="height: 30px;line-height: 30px;margin-top: 13px;margin-left: 10px">绘画</span>
+		                <span class="layui-badge-rim" style="height: 30px;line-height: 30px;margin-top: 13px;margin-left: 10px">诗经</span>
+		                <span class="layui-badge-rim" style="height: 30px;line-height: 30px;margin-top: 13px;margin-left: 10px">诗词研究</span>
+		                <span class="layui-badge-rim" style="height: 30px;line-height: 30px;margin-top: 13px;margin-left: 10px">历代书法</span>
+		            
+	                </div>
+	            </fieldset>
+	        </div>
+	    </div>
+        <!-- 主体显示部分 右面板 -->
+        <div class="content-body">
+            <!-- 留言板面板 -->
+            <div class="blog-item">
+				<fieldset class="layui-elem-field" style="text-align: left;">
+				  <legend>主人寄语</legend>
+				  <div class="layui-field-box" style="padding: 20px 100px;">
+				    	有什么话想对我说呢？
+				  </div>
+				</fieldset>
+                <!-- 留言 -->
+                <style>
+                	.layui-field-box span:hover{
+					    cursor: pointer;
+					    background-color: #FFFFFF;
+					    color: #000000;
+                	}
+                </style>
+				<fieldset class="layui-elem-field" style="text-align: left;">
+				  <legend>留言板 共2条留言</legend>
+				  <div class="layui-field-box" style="padding-top: 20px;padding-left: 60px;">
+				    	<!-- 留言内容 -->
+				    	<div class="message1" style="overflow: hidden;margin-top: 20px;">
+				    		<!-- 头像 -->
+				    		<img src="img/IMG_1568.PNG" style="width: 60px; float: left; border-radius: 50px;"/>
+				    		<div style="display: block;margin-left: 20px;float: left;margin-top: 5px;">
+				    			<span>悠嘻猴         第1楼</span>
+				    			<p style="margin-top: 5px;margin-left: 30px;">——感觉你的博客还不错。</p>
+				    		</div>
+				    	</div>
+				    	<hr style="display: block;margin-top: 25px;margin-bottom: 25px;"/>
+				    	<div class="message1" style="overflow: hidden;">
+				    		<!-- 头像 -->
+				    		<img src="img/IMG_1568.PNG" style="width: 60px; float: left; border-radius: 50px;"/>
+				    		<div style="display: block;margin-left: 20px;float: left;margin-top: 5px;">
+				    			<span>superman         第2楼</span>
+				    			<p style="margin-top: 5px;margin-left: 30px;">——I'm superman。</p>
+				    		</div>
+				    	</div>
+				    	<!-- 我要留言 -->
+				    	<div class="container" style="margin-top: 60px;">
+				    		<form class="layui-form layui-form-pane" action="">
+							  <div class="layui-form-item layui-form-text">
+							    <label class="layui-form-label">我要留言</label>
+							    <div class="layui-input-block">
+							      <textarea placeholder="请输入内容" class="layui-textarea"></textarea>
+							    </div>
+							  </div>
+							  <div class="layui-form-item">
+							    <button class="layui-btn" lay-submit="" lay-filter="demo2">留言</button>
+							  </div>
+							</form>
+				    	</div>
+				    	
+    <script src="layui-v2.2.3/layui/layui.js"></script>
+    <!-- 引入jquery js -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- 自定义 js -->
+    <script src="js/index.js"></script>
+    <script>
+        $(function () {
+            //init
+            component.init();
+        });
+    </script>
+	</body>
+</html>
